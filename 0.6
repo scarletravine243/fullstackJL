@@ -5,10 +5,10 @@ sequenceDiagram
     Note over browser: Użytkownik wpisuje treść notatki i klika Save
     Note over browser: JavaScript dodaje notatkę do listy i aktualizuje widok
 
-    browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+    browser -> server: POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
     Note right of browser: Treść notatki w formacie JSON
     activate server
-    server-->>browser: 201 Created
+    server -> browser: 201 Created
     deactivate server
 
     Note over browser: Strona nie jest przeładowywana
